@@ -1,0 +1,88 @@
+.table-list {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    padding: 0 .3rem;
+    border-bottom: 10px solid #282825;
+}
+
+.table-list .item {
+    height: 0.86rem;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    font-size: .24rem;
+    color: #c1bb87;
+    font-weight: 100;
+    border-bottom: 1px solid #35362f;
+}
+
+.table-list .item .item-one {
+    color: #665f30;
+    display: block;
+    width: 1rem;
+}
+
+.table-list .item .item-two {
+    display: -webkit-flex;
+    display: flex;
+}
+
+.table-list .item .item-three {
+    padding-right: 0.4rem;
+    width: 1.5rem;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: flex-end;
+    justify-content: flex-end;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.table-list .item:last-child .item-three {
+    color: #eb6004;
+}
+
+.table-list .item:last-child .item-three .icon {
+    font-size: .12rem;
+    margin-right: 0.05rem;
+}
+
+.table-list .item .item-two i {
+    font-style: normal;
+    width: 1rem;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: flex-end;
+    justify-content: flex-end;
+}
+
+.lines {
+    position: relative;
+    width: 0.9rem;
+    margin-left: .2rem;
+}
+
+.bar {
+    /* display: none; */
+    position: absolute;
+    top: .08rem;
+    left: 0;
+    width: 0.9rem;
+    height: .12rem;
+    background-color: #ffc601;
+}
+
+.bar-score {
+    position: absolute;
+    top: .08rem;
+    left: 0;
+    width: 0.9rem;
+    height: .12rem;
+    z-index: 10;
+    background-color: #3a3b33;
+}

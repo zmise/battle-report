@@ -1,0 +1,32 @@
+.echarts-column-bar p {
+    font-size: .3rem;
+    padding: 0.15rem 0.6rem .3rem;
+    color: #c1bb87;
+    font-weight: 700;
+}
+
+.echarts-column-bar .bar-box {
+    padding: 0 .6rem;
+}
+
+.echarts-column-bar .analytics {
+    padding: 0 .8rem;
+    height: 0.9rem;
+    background-color: #3d3f34;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+}
+
+.echarts-column-bar .analytics i {
+    font-style: normal;
+    font-size: .26rem;
+    color: #c1bb87;
+}
+
+.echarts-column-bar .analytics strong {
+    color: #ff6600;
+}

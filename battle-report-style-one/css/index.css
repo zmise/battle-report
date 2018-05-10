@@ -1,0 +1,107 @@
+body {
+    padding: 0;
+    background-color: #000
+}
+
+.article-body {
+    height: 100%;
+    overflow: hidden;
+}
+
+.header-bg {
+    height: 2rem;
+    background: url('http://192.168.0.42/resource/wechat/battle-report/images/bg-head.png') no-repeat;
+    background-size: 100% 100%;
+}
+
+.header-mid {
+    position: relative;
+    height: calc(100% - 9.5rem);
+}
+
+.header-mid .img-mid {
+    position: absolute;
+    top: -.5rem;
+    left: 0;
+    right: 0;
+    bottom: auto;
+    height: 5.08rem;
+    /* background: url('http://192.168.0.42/resource/wechat/battle-report/images/title-szz.png') no-repeat; */
+    /* background-size: 100% 100%; */
+}
+
+.header-mid .content {
+    display: inline-block;
+    position: absolute;
+    top: 1.25rem;
+    left: 2.35rem;
+    width: 2.2rem;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    box-sizing: border-box;
+    transform: rotate(-15deg);
+    -ms-transform: rotate(-15deg);
+    /* IE 9 */
+    -moz-transform: rotate(-15deg);
+    /* Firefox */
+    -webkit-transform: rotate(-15deg);
+    /* Safari 和 Chrome */
+    -o-transform: rotate(-15deg);
+    font-size: .26rem;
+    color: #F1EA55;
+    letter-spacing: .03rem;
+}
+
+.header-footer {
+    position: relative;
+    height: 7.5rem;
+    background: url('http://192.168.0.42/resource/wechat/battle-report/images/bg.png') no-repeat;
+    background-size: 100% 100%;
+}
+
+.header-footer .content {
+    position: absolute;
+    bottom: 1.4rem;
+    right: .25rem;
+    width: 4rem;
+    height: 2.8rem;
+    color: #fff7dc;
+    transform: rotate(-20deg);
+    /*旋转角度*/
+    -ms-transform: rotate(-20deg);
+    /* IE 9 */
+    -moz-transform: rotate(-20deg);
+    /* Firefox */
+    -webkit-transform: rotate(-20deg);
+    /* Safari 和 Chrome */
+    -o-transform: rotate(-20deg);
+    overflow: hidden;
+}
+
+.header-footer .content p {
+    font-size: .36rem;
+    letter-spacing: .03rem;
+    word-wrap: break-word;
+    line-height: .6rem;
+    font-weight: 100;
+}
+
+.header-footer .btn {
+    position: absolute;
+    bottom: 0.4rem;
+    right: 0;
+    width: 3.44rem;
+    height: 1.85rem;
+    background: url('http://192.168.0.42/resource/wechat/battle-report/images/btnbg.png') no-repeat;
+    background-size: 100% 100%;
+}
+
+.header-footer .btn a {
+    display: block;
+    width: 3.44rem;
+    height: 1.85rem;
+}

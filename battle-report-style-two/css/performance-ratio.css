@@ -1,0 +1,24 @@
+.article-body {
+    background-color: #fff;
+}
+
+.echarts-pie {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    color: #000;
+    padding-top: 0.3rem;
+}
+
+.echarts-pie p {
+    font-size: .36rem;
+}
+
+.echarts-pie strong {
+    font-size: .46rem;
+}

@@ -1,0 +1,19 @@
+.article-body {
+    background-color: #fff;
+}
+
+.echarts-bar p {
+    padding: 0 .2rem;
+    font-size: .3rem;
+    padding: 0.15rem .4rem .3rem;
+    color: #2d2a16;
+    font-weight: 700;
+}
+
+.echarts-bar .item {
+    border-bottom: .2rem solid #f4f4f4;
+}
+
+.echarts-bar .item:last-child {
+    border: 0;
+}

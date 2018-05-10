@@ -1,0 +1,23 @@
+body {
+    /* background-color: #fff; */
+}
+
+.echarts-line {}
+
+.echarts-line {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    color: #c1bb87;
+    padding: 0.3rem .3rem 0;
+}
+
+.echarts-line p {
+    font-size: .36rem;
+    font-weight: 200;
+}
