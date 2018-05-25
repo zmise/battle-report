@@ -477,15 +477,17 @@ body {
 .article-body {
     min-height: calc(100%);
 }
-
 .title-images {
+    position: relative;
     height: 2.2rem;
-    background: url('http://192.168.0.42/resource/wechat/battle-report/images/title-images.png') no-repeat;
+    background: url('../images/title-images.png') no-repeat;
     background-size: 100% 100%;
     display: -webkit-flex;
     display: flex;
-    -webkit-align-items: flex-end;
-    align-items: flex-end;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    -webkit-align-items: center;
+    align-items: center;
     -webkit-justify-content: center;
     justify-content: center;
     box-sizing: border-box;
@@ -493,11 +495,25 @@ body {
 
 .title-images p {
     font-size: .4rem;
-    line-height: .9rem;
     padding-left: 0.4rem;
+    padding-bottom: 0.2rem;
     color: #c1bb87;
     font-weight: 100;
 }
+
+.title-images img {
+    height: 1.5rem;
+    width: 2.5rem;
+    transform: rotate(12deg);
+    -ms-transform: rotate(12deg);
+    /* IE 9 */
+    -moz-transform: rotate(12deg);
+    /* Firefox */
+    -webkit-transform: rotate(12deg);
+    /* Safari 和 Chrome */
+    -o-transform: rotate(12deg);
+}
+
 
 .overbox {
     position: absolute;

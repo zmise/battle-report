@@ -20,8 +20,8 @@
 }
 
 /**
-* 尽可能使用系统原生字体，PC上很多字体手机端并没有，保留Arial用于PC端调试;
-*/
+ * 尽可能使用系统原生字体，PC上很多字体手机端并没有，保留Arial用于PC端调试;
+ */
 
 html,
 body {
@@ -88,11 +88,11 @@ h6 {
 }
 
 /**
-* 重置标签元素
-* 1. Remove the gray background on active links in IE 10.
-* 2. Remove gaps in links underline in iOS 8+ and Safari 8+.
-* 3. 当在iOS上触摸并按住一个元素的时候，Safari会展示一个关于这个链接的callout信息。禁用该属性。
-*/
+ * 重置标签元素
+ * 1. Remove the gray background on active links in IE 10.
+ * 2. Remove gaps in links underline in iOS 8+ and Safari 8+.
+ * 3. 当在iOS上触摸并按住一个元素的时候，Safari会展示一个关于这个链接的callout信息。禁用该属性。
+ */
 
 a {
     text-decoration: none;
@@ -151,9 +151,9 @@ tt {
 }
 
 /**
-* 1. Remove the bottom border in Chrome 57- and Firefox 39-.
-* 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
-*/
+ * 1. Remove the bottom border in Chrome 57- and Firefox 39-.
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
 
 abbr[title] {
     border-bottom: none;
@@ -183,9 +183,9 @@ small {
 }
 
 /**
-* Prevent `sub` and `sup` elements from affecting the line height in
-* all browsers.
-*/
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
 
 sub,
 sup {
@@ -204,8 +204,8 @@ sup {
 }
 
 /**
-* Add the correct display in IE 9-.
-*/
+ * Add the correct display in IE 9-.
+ */
 
 audio,
 video {
@@ -243,9 +243,9 @@ fieldset {
 }
 
 /**
-* 1. Add the correct display in IE 9-.
-* 2. Add the correct vertical alignment in Chrome, Firefox, and Opera.
-*/
+ * 1. Add the correct display in IE 9-.
+ * 2. Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
 
 progress {
     display: inline-block;
@@ -257,10 +257,10 @@ progress {
 /* ------------------Form------------------ */
 
 /**
-* 1. Prevent a WebKit bug where (2) destroys native `audio` and `video`
-*    controls in Android 4.
-* 2. Correct the inability to style clickable types in iOS and Safari.
-*/
+ * 1. Prevent a WebKit bug where (2) destroys native `audio` and `video`
+ *    controls in Android 4.
+ * 2. Correct the inability to style clickable types in iOS and Safari.
+ */
 
 button,
 html [type="button"],
@@ -292,9 +292,9 @@ button:-moz-focusring,
 }
 
 /**
-* 1. Add the correct box sizing in IE 10-.
-* 2. Remove the padding in IE 10-.
-*/
+ * 1. Add the correct box sizing in IE 10-.
+ * 2. Remove the padding in IE 10-.
+ */
 
 [type="checkbox"],
 [type="radio"] {
@@ -413,9 +413,28 @@ body {
     align-items: center;
     -webkit-justify-content: center;
     justify-content: center;
-    width: 1.08rem;
     height: .7rem;
+    padding: 0 .3rem;
     font-size: .48rem;
+    color: #665f30;
+}
+
+.header-body .pifu {
+    position: absolute;
+    top: 0;
+    right: auto;
+    bottom: auto;
+    left: 1.1rem;
+    z-index: 10;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    height: .7rem;
+    padding: 0 .1rem;
+    font-size: .36rem;
     color: #665f30;
 }
 
@@ -432,8 +451,8 @@ body {
     width: 4rem;
     border-radius: .12rem;
     /* -webkit-transform: translateY(100%);
-    -moz-transform: translateY(100%);
-    transform: translateY(100%); */
+     -moz-transform: translateY(100%);
+     transform: translateY(100%); */
 }
 
 .navigate-body li {
@@ -475,17 +494,20 @@ body {
 }
 
 .article-body {
-    min-height: calc(100% - .7rem);
+    min-height: calc(100%);
 }
 
 .title-images {
+    position: relative;
     height: 2.2rem;
-    background: url('http://192.168.0.42/resource/wechat/battle-report/images/title-images.png') no-repeat;
+    background: url('../images/title-images.png') no-repeat;
     background-size: 100% 100%;
     display: -webkit-flex;
     display: flex;
-    -webkit-align-items: flex-end;
-    align-items: flex-end;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    -webkit-align-items: center;
+    align-items: center;
     -webkit-justify-content: center;
     justify-content: center;
     box-sizing: border-box;
@@ -493,8 +515,89 @@ body {
 
 .title-images p {
     font-size: .4rem;
-    line-height: .9rem;
     padding-left: 0.4rem;
+    padding-bottom: 0.2rem;
     color: #c1bb87;
     font-weight: 100;
+}
+
+.title-images img {
+    height: 1.5rem;
+    width: 2.5rem;
+    transform: rotate(12deg);
+    -ms-transform: rotate(12deg);
+    /* IE 9 */
+    -moz-transform: rotate(12deg);
+    /* Firefox */
+    -webkit-transform: rotate(12deg);
+    /* Safari 和 Chrome */
+    -o-transform: rotate(12deg);
+}
+
+.overbox {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    height: 100%;
+    width: 100%;
+    background-color: #555;
+    opacity: 0.8;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+}
+
+.box img {
+    width: 1.42rem;
+    height: 1.37rem;
+}
+
+.box {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    background-color: #fff;
+    height: 2.3rem;
+    width: 2.1rem;
+    border-radius: .3rem
+}
+
+.box p {
+    font-size: .3rem;
+}
+
+.title-body {
+    height: 1.35rem;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    box-sizing: border-box;
+    border-bottom: 1px solid #f2c741;
+    background-color: #30312a;
+}
+
+.title-body p {
+    font-size: .4rem;
+    padding-left: 0.4rem;
+    color: #f2c741;
+    font-weight: 100;
+}
+
+.title-body i {
+    font-style: normal;
+    padding-left: 0.1rem;
+    font-size: .3rem;
+    color: #636363;
 }
