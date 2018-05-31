@@ -20,8 +20,8 @@
 }
 
 /**
- * 尽可能使用系统原生字体，PC上很多字体手机端并没有，保留Arial用于PC端调试;
- */
+  * 尽可能使用系统原生字体，PC上很多字体手机端并没有，保留Arial用于PC端调试;
+  */
 
 html,
 body {
@@ -88,11 +88,11 @@ h6 {
 }
 
 /**
- * 重置标签元素
- * 1. Remove the gray background on active links in IE 10.
- * 2. Remove gaps in links underline in iOS 8+ and Safari 8+.
- * 3. 当在iOS上触摸并按住一个元素的时候，Safari会展示一个关于这个链接的callout信息。禁用该属性。
- */
+  * 重置标签元素
+  * 1. Remove the gray background on active links in IE 10.
+  * 2. Remove gaps in links underline in iOS 8+ and Safari 8+.
+  * 3. 当在iOS上触摸并按住一个元素的时候，Safari会展示一个关于这个链接的callout信息。禁用该属性。
+  */
 
 a {
     text-decoration: none;
@@ -151,9 +151,9 @@ tt {
 }
 
 /**
- * 1. Remove the bottom border in Chrome 57- and Firefox 39-.
- * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
- */
+  * 1. Remove the bottom border in Chrome 57- and Firefox 39-.
+  * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+  */
 
 abbr[title] {
     border-bottom: none;
@@ -183,9 +183,9 @@ small {
 }
 
 /**
- * Prevent `sub` and `sup` elements from affecting the line height in
- * all browsers.
- */
+  * Prevent `sub` and `sup` elements from affecting the line height in
+  * all browsers.
+  */
 
 sub,
 sup {
@@ -204,8 +204,8 @@ sup {
 }
 
 /**
- * Add the correct display in IE 9-.
- */
+  * Add the correct display in IE 9-.
+  */
 
 audio,
 video {
@@ -243,9 +243,9 @@ fieldset {
 }
 
 /**
- * 1. Add the correct display in IE 9-.
- * 2. Add the correct vertical alignment in Chrome, Firefox, and Opera.
- */
+  * 1. Add the correct display in IE 9-.
+  * 2. Add the correct vertical alignment in Chrome, Firefox, and Opera.
+  */
 
 progress {
     display: inline-block;
@@ -257,10 +257,10 @@ progress {
 /* ------------------Form------------------ */
 
 /**
- * 1. Prevent a WebKit bug where (2) destroys native `audio` and `video`
- *    controls in Android 4.
- * 2. Correct the inability to style clickable types in iOS and Safari.
- */
+  * 1. Prevent a WebKit bug where (2) destroys native `audio` and `video`
+  *    controls in Android 4.
+  * 2. Correct the inability to style clickable types in iOS and Safari.
+  */
 
 button,
 html [type="button"],
@@ -292,9 +292,9 @@ button:-moz-focusring,
 }
 
 /**
- * 1. Add the correct box sizing in IE 10-.
- * 2. Remove the padding in IE 10-.
- */
+  * 1. Add the correct box sizing in IE 10-.
+  * 2. Remove the padding in IE 10-.
+  */
 
 [type="checkbox"],
 [type="radio"] {
@@ -413,8 +413,8 @@ body {
     align-items: center;
     -webkit-justify-content: center;
     justify-content: center;
+    width: 1.08rem;
     height: .7rem;
-    padding: 0 .3rem;
     font-size: .48rem;
     color: #665f30;
 }
@@ -435,6 +435,7 @@ body {
     height: .7rem;
     padding: 0 .1rem;
     font-size: .36rem;
+    padding-bottom: 0.1rem;
     color: #665f30;
 }
 
@@ -450,9 +451,10 @@ body {
     /* height: 10rem; */
     width: 4rem;
     border-radius: .12rem;
+    /* position: relative; */
     /* -webkit-transform: translateY(100%);
-     -moz-transform: translateY(100%);
-     transform: translateY(100%); */
+      -moz-transform: translateY(100%);
+      transform: translateY(100%); */
 }
 
 .navigate-body li {
@@ -467,8 +469,8 @@ body {
     align-items: center;
     margin: 0 .5rem;
     box-sizing: border-box;
-    border-top: 1px solid #f8f8f7;
-    border-bottom: 1px solid #ececeb;
+    border-top: 0.01rem solid #f8f8f7;
+    border-bottom: 0.01rem solid #ececeb;
     font-size: .26rem;
     color: #665f30;
 }
@@ -521,7 +523,27 @@ body {
     font-weight: 100;
 }
 
+.title-images i {
+    position: absolute;
+    bottom: .12rem;
+    left: auto;
+    right: auto;
+    font-size: .4rem;
+    color: #c1bb87;
+    font-weight: 100;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    width: 100%;
+}
+
 .title-images img {
+    margin-bottom: 0.5rem;
     height: 1.5rem;
     width: 2.5rem;
     transform: rotate(12deg);
@@ -601,3 +623,71 @@ body {
     font-size: .3rem;
     color: #636363;
 }
+
+i {
+    font-style: normal;
+}
+
+/* 局部布局 */
+
+.echarts-column-bar .analytics {
+    padding: 0.3rem .8rem 0;
+    background-color: #3d3f34;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    /*-webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    justify-content: center;*/
+    font-size: .26rem;
+    color: #c1bb87;
+}
+
+.echarts-column-bar .analytics .content {
+    display: -webkit-flex;
+    display: flex;
+    margin-bottom: .3rem;
+}
+
+.echarts-column-bar .analytics .tip {
+    display: -webkit-flex;
+    display: flex;
+    margin-bottom: .3rem;
+}
+
+.echarts-column-bar .analytics .title {
+    width: 2.5rem;
+}
+
+.echarts-column-bar .analytics strong {
+    color: #ff6600;
+}
+
+.triangle {
+    width: 0;
+    border-top: .2rem solid transparent;
+    border-bottom: .2rem solid #fff;
+    border-left: .2rem solid transparent;
+    border-right: .2rem solid transparent;
+    position: absolute;
+    top: .5rem;
+    left: .3rem;
+    z-index: 1000;
+}
+
+/* .triangle:before {
+    display: block;
+    content: "";
+    width: 0px;
+    height: 0px;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    position: absolute;
+}
+
+.triangle:before {
+    top: -.15rem;
+    left: .2rem;
+} */

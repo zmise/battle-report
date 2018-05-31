@@ -8,8 +8,10 @@ $(function () {
         right: '0',
         top: '10',
         textStyle: {
-          fontSize: '30',
-          color: '#000'
+          fontSize: '20',
+          color: '#000',
+          fontWeight: 700
+
         }
       },
       tooltip: {

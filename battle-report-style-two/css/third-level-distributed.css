@@ -25,7 +25,8 @@
 .table-list .item .item-one {
     color: #b6b6b5;
     display: block;
-    width: 1rem;
+    width: 1.5rem;
+    overflow: hidden;
 }
 
 .table-list .item .item-two {

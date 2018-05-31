@@ -7,8 +7,9 @@ $(function () {
         left: '0',
         top: '10',
         textStyle: {
-          fontSize: '24',
-          color: '#000'
+          fontSize: '20',
+          color: '#000',
+          fontWeight: 700
         }
       },
       tooltop: {

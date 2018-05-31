@@ -3,14 +3,15 @@ $(function () {
 
   function renderCompanyColumnBarChart(name) {
     var option = {
-      title:{
-        text:data.name,
-        right:'0',
-        top:'10',
-        textStyle:{
-        fontSize:'30',
-        color:'#fff'
-        }     
+      title: {
+        text: data.name,
+        right: '0',
+        top: '10',
+        textStyle: {
+          fontSize: '20',
+          color: '#c1bb87',
+          fontWeight: 700
+        }
       },
       tooltip: {
         trigger: 'axis',
@@ -68,17 +69,17 @@ $(function () {
     myChart.setOption(option);
   }
 
-    var data = {
-    color:'#79cd65',
-    name:'租'
+  var data = {
+    color: '#79cd65',
+    name: '租'
   }
-  renderCompanyColumnBarChart('columnBar',data);
-     data = {
-    color:'#1782B4',
-    name:'售'
-    
+  renderCompanyColumnBarChart('columnBar', data);
+  data = {
+    color: '#1782B4',
+    name: '售'
+
   }
-  renderCompanyColumnBarChart('columnBar1',data);
+  renderCompanyColumnBarChart('columnBar1', data);
 
 
 

@@ -1,15 +1,16 @@
 $(function () {
   var myChart = echarts.init(document.getElementById('data'));
   myChart.setOption({
-    title:{
-        text:'xxxxx',
-        left:'0',
-        top:'10',
-        textStyle:{
-        fontSize:'24',
-        color:'#fff'
-        }     
-      },
+    title: {
+      text: 'xxxxx',
+      left: '0',
+      top: '10',
+      textStyle: {
+        fontSize: '20',
+        color: '#c1bb87',
+        fontWeight: 700
+      }
+    },
     tooltop: {
       trigger: 'item'
     },
@@ -58,14 +59,18 @@ $(function () {
           borderWidth: 4,
           color: '#ff9933',
           shadowBlur: 5
-        },     
+        },
         label: {
           show: true,
         },
         data: [0, 0, 10, 0]// housePrice
         // data: housePrice
-      }  
+      }
     ]
   });
 
 });
+// font-size: .3rem;
+//     padding: 0.15rem 0.6rem .3rem;
+//     color: #c1bb87;
+//     font-weight: 700;

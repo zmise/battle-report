@@ -16,7 +16,7 @@ body {
 .echarts-column-bar .bar-box {
   padding: 0 .6rem;
 }
-
+/*
 .echarts-column-bar .analytics {
   padding: 0 .8rem;
   height: 0.9rem;
@@ -27,7 +27,7 @@ body {
   align-items: center;
   -webkit-justify-content: center;
   justify-content: center;
-}
+} */
 
 .echarts-column-bar .analytics i {
   font-style: normal;

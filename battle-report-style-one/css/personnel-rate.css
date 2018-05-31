@@ -19,12 +19,11 @@ body {
 
 .echarts-column-bar .analytics {
   padding: 0.3rem .8rem 0;
-  /*height: 0.9rem;*/
   background-color: #3d3f34;
   display: -webkit-flex;
   display: flex;
-   -webkit-flex-direction: column;
-    flex-direction: column;
+  -webkit-flex-direction: column;
+  flex-direction: column;
   /*-webkit-align-items: center;
   align-items: center;
   -webkit-justify-content: center;
@@ -32,19 +31,23 @@ body {
   font-size: .26rem;
   color: #c1bb87;
 }
-.echarts-column-bar .analytics .content{
+
+.echarts-column-bar .analytics .content {
   display: -webkit-flex;
   display: flex;
   margin-bottom: .3rem;
 }
-.echarts-column-bar .analytics .tip{
+
+.echarts-column-bar .analytics .tip {
   display: -webkit-flex;
   display: flex;
   margin-bottom: .3rem;
 }
-.echarts-column-bar .analytics .title{
+
+.echarts-column-bar .analytics .title {
   width: 2.5rem;
 }
+
 .echarts-column-bar .analytics strong {
   color: #ff6600;
 }
