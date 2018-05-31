@@ -12,7 +12,8 @@
     -webkit-justify-content: center;
     justify-content: center;
     color: #333;
-    padding: 0.3rem .3rem 0;
+    padding: 0.3rem .3rem .6rem;
+    border-bottom: 0.02rem solid #b4b4b4;
 }
 
 .echarts-line p {

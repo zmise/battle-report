@@ -14,7 +14,8 @@ body {
     -webkit-justify-content: center;
     justify-content: center;
     color: #c1bb87;
-    padding: 0.3rem .3rem 0;
+    padding: 0.3rem .3rem .6rem;
+    border-bottom: 0.02rem solid #665f30;
 }
 
 .echarts-line p {

@@ -528,7 +528,7 @@ body {
     bottom: .12rem;
     left: auto;
     right: auto;
-    font-size: .4rem;
+    font-size: .36rem;
     color: #c1bb87;
     font-weight: 100;
     display: -webkit-flex;
@@ -546,14 +546,14 @@ body {
     margin-bottom: 0.5rem;
     height: 1.5rem;
     width: 2.5rem;
-    transform: rotate(12deg);
-    -ms-transform: rotate(12deg);
+    transform: rotate(13.5deg);
+    -ms-transform: rotate(13.5deg);
     /* IE 9 */
-    -moz-transform: rotate(12deg);
+    -moz-transform: rotate(13.5deg);
     /* Firefox */
-    -webkit-transform: rotate(12deg);
+    -webkit-transform: rotate(13.5deg);
     /* Safari 和 Chrome */
-    -o-transform: rotate(12deg);
+    -o-transform: rotate(13.5deg);
 }
 
 .overbox {
